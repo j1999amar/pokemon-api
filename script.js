@@ -2,13 +2,18 @@ var heading=document.createElement("div")
 heading.setAttribute("id","heading")
 heading.innerHTML=`<img src="poke.png" alt="">`
 document.body.append(heading)
+var image=001;
+
 function pokemon_display(poke) {
+  // console.log(poke.sprites.front_default)
     var name;
     var ability=[];
     var weight;
     var moves=[];
   var pokemon_ability=poke.abilities
   var pokemon_moves=poke.moves
+  var pokemon_image=poke.sprites.other.dream_world.front_default
+  console.log(pokemon_image)
   for(var i=0;i<1;i++){
     name=poke.name
   }
@@ -20,10 +25,15 @@ function pokemon_display(poke) {
   }
   for(var i=0;i<pokemon_moves.length;i++){
     moves[i]=pokemon_moves[i].move.name
+
+}
+for(var i=0;i<=1;i++){
+  image=pokemon_image
 }
 let div_pokemon = document.createElement("div");
 div_pokemon.setAttribute("class","pokemon")
 div_pokemon.innerHTML = `
+<img class="poke_img" src="${image}" alt="${name}">
 <h3 >Pokemon Name : ${name}</h3>
 <h3>Abilities : ${ability}  </h3>
 <h3>Weight : ${ weight}</h3>

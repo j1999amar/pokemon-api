@@ -9,6 +9,10 @@
 img{
     width:80%;
 }
+.poke_img{
+    width:200px;
+    height: 200px;
+}
 .pokemon{
     background-color: hsl(34deg 93% 48% / 69%);
     letter-spacing: 1px;
@@ -26,6 +30,7 @@ img{
 .pokemon:hover{
     background-color: rgba(238, 167, 75, 0.69);
     margin-left: 50px;
+
     
 }
 body{
